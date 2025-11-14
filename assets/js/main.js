@@ -1,6 +1,21 @@
 // Set current year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Scroll to top button
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
 // Navbar scroll highlight
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
