@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Multi agent Security Operations assistant",
+    "company": "Hughes Systique Pvt Ltd",
+    "duration": "2024 - Present",
+    "description": [
+      "Designed multi-agent agentic AI system integrating Splunk, Cortex XSIAM, and Nautobot",
+      "Implemented natural language interface for conversational incident/alert queries",
+      "Automated threat intelligence gathering with real-time CVE scraping from 15+ sources",
+      "Built automated reporting and visualization capabilities",
+      "Natural language to splunk query generator"
+    ],
+    "technologies": ["Agentic AI", "Autogen framework", "Python3","GCP", "AWS", "AWS Bedrock", "LLM","Web scrapping", "Agent observability", "Agentic memory"]
+  },
+  {
+    "title": "Call & Case Analytics Pipeline",
+    "company": "Hughes Systique Pvt Ltd",
+    "duration": "2023 - 2024",
+    "description": [
+      "Engineered end-to-end platform: call center data ingestion → Azure Whisper transcription → LLM analysis",
+      "Reduced manual auditor effort by 80% and operational costs by 60%+",
+      "Implemented automated QA and reporting system",
+      "Built insight generation pipeline for call center analytics"
+    ],
+    "technologies": ["Azure Whisper", "LLM", "Python3", "CI/CD", "prompt engineering"]
+  },
+  {
+    "title": "RAG-based Knowledge Assistant",
+    "company": "Hughes Systique Pvt Ltd",
+    "duration": "2022 - 2023",
+    "description": [
+      "Built enterprise Q&A system for HR/Finance/Admin policies",
+      "Implemented multi-format document ingestion (PDFs, DOCs, PPTs, images)",
+      "Developed semantic chunking and vector search capabilities",
+      "Enabled organization-wide self-service policy access"
+    ],
+    "technologies": ["RAG", "Vector DB", "Chroma Db", "LangChain", "Python3", "NLP", "Web scrapping"]
+  },
+  {
+    "title": "Quantum Key Distribution (QKD) Application",
+    "company": "Hughes Systique Pvt Ltd",
+    "duration": "2020 - 2022",
+    "description": [
+      "Designed and deployed ETSI-compliant KMS and SDN controller",
+      "Implemented Trusted Node and Hub-and-Spoke architectures for long-distance quantum key sharing",
+      "Built complete key lifecycle management (generation, relay, sync, storage, secure APIs)",
+      "Evaluated performance metrics including key rate, latency, and network scalability"
+    ],
+    "technologies": ["QKD Key distribution", "Key management system", "Golang", "C++", "SDN", "OpenVPN", "ETSI QKD", "Yocto", "Kernel hardening"]
+  },
+  {
+    "title": "Satellite Ground Station Control System",
+    "company": "Hughes Systique Pvt Ltd",
+    "duration": "2019 - 2020",
+    "description": [
+      "Built natural-language test automation framework",
+      "Developed multi-component orchestration system",
+      "Implemented automated reporting capabilities"
+    ],
+    "technologies": ["C++11", "Python", "Google Protobuf"]
+  }
+]

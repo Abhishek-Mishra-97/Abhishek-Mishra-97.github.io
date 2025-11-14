@@ -1,0 +1,13 @@
+{
+  "Generative AI & LLMs": ["Multi-Agent Systems","Large Language Models", "RAG (Retrieval Augmented Generation)", "Prompt Engineering", "LLMOps", "Agent Ops", "Agentic memory management"],
+  "AI Frameworks": ["Autogen", "LangChain", "AWS Bedrock", "Azure AI Foundry"],
+  "Machine Learning": ["Supervised Learning", "Unsupervised Learning", "Neural networks"],
+  "MLOps & DevOps": ["MLOps", "LLMOps", "CI/CD", "Docker", "Deployment Automation"],
+  "Data Science": ["Pandas", "NumPy", "Scikit-Learn", "NLTK"],
+  "Web scrapping": ["BeautifulSoup"],
+  "Data Visualization": ["Matplotlib", "Seaborn", "Plotly"],
+  "Vector Databases": ["Chroma db","Semantic Search", "Embeddings"],
+  "Cloud Platforms": ["GCP","AWS", "Azure AI foundry"],
+  "Programming Languages": ["Python3", "Golang", "C++", "Bash"],
+  "Backend and frontend frameworks": ["Flask", "FastAPI", "Streamlit", "Gradio"]
+}

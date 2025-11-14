@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="blog-title">Blog Post - Abhishek Mishra</title>
+    <meta name="description" content="Blog post by Abhishek Mishra">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../index.html#experience" class="nav-link">Experience</a>
+            <a href="../index.html#education" class="nav-link">Education</a>
+            <a href="../index.html#projects" class="nav-link">Projects</a>
+            <a href="../index.html#skills" class="nav-link">Skills</a>
+            <a href="../blog.html" class="nav-link active">Blog</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <article class="blog-article">
+        <div class="container">
+            <a href="../blog.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+            <h1 id="article-title" class="article-title"></h1>
+            <div class="article-meta">
+                <span id="article-date"></span>
+                <span id="article-read-time"></span>
+            </div>
+            <div id="article-content" class="article-content"></div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Abhishek Mishra. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Abhishek-Mishra-97" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abhishek-mishraa6ba9a141/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:abhishekmishra.sci@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const slug = urlParams.get('slug');
+        
+        if (slug) {
+            fetch(`../blogs/${slug}.md`)
+                .then(response => response.text())
+                .then(markdown => {
+                    const html = marked.parse(markdown);
+                    document.getElementById('article-content').innerHTML = html;
+                    
+                    const firstHeading = document.querySelector('#article-content h1');
+                    if (firstHeading) {
+                        const title = firstHeading.textContent;
+                        document.getElementById('article-title').textContent = title;
+                        document.getElementById('blog-title').textContent = title + ' - Abhishek Mishra';
+                        firstHeading.remove();
+                    }
+                    
+                    const words = markdown.split(/\s+/).length;
+                    const readTime = Math.ceil(words / 200);
+                    document.getElementById('article-read-time').textContent = `${readTime} min read`;
+                })
+                .catch(err => {
+                    document.getElementById('article-content').innerHTML = '<p>Blog post not found.</p>';
+                });
+            
+            fetch('../data/blogs.json')
+                .then(response => response.json())
+                .then(blogs => {
+                    const blog = blogs.find(b => b.slug === slug);
+                    if (blog) {
+                        document.getElementById('article-date').textContent = blog.date;
+                    }
+                });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+  {
+    "title": "AI-Powered Security Operations Platform",
+    "description": "Multi-agent agentic AI system integrating Splunk, Cortex XSIAM, and Nautobot with natural language interface. Automated threat intelligence gathering with real-time CVE scraping from 15+ sources. Enabled SOC analysts to query incidents conversationally.",
+    "technologies": ["Autogen", "Python", "Splunk", "Cortex XSIAM", "Nautobot", "Vector DB", "LLM"],
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "Call & Case Analytics Pipeline",
+    "description": "End-to-end platform for call center analytics: data ingestion → Azure Whisper transcription → LLM analysis → insight generation. Reduced manual auditor effort by 80% and operational costs by 60%+.",
+    "technologies": ["Azure Whisper", "LLM", "Python", "MLOps", "CI/CD"],
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "RAG-based Enterprise Knowledge Assistant",
+    "description": "Enterprise Q&A system for HR/Finance/Admin policies with multi-format document ingestion (PDFs, DOCs, PPTs, images), semantic chunking, and vector search. Enabled organization-wide self-service policy access.",
+    "technologies": ["RAG", "Vector DB", "LangChain", "Python", "NLP", "Semantic Search"],
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "Quantum Key Distribution (QKD) Application",
+    "description": "ETSI-compliant KMS and SDN controller with Trusted Node and Hub-and-Spoke architectures for long-distance quantum key sharing. Complete key lifecycle management with evaluated performance metrics (key rate, latency, network scalability).",
+    "technologies": ["Golang", "C++", "SDN", "OpenVPN", "ETSI QKD"],
+    "github": "",
+    "demo": ""
+  },
+  {
+    "title": "Satellite Ground Station Control System",
+    "description": "Natural-language test automation framework for multi-component orchestration with automated reporting capabilities. Streamlined satellite ground station operations and testing workflows.",
+    "technologies": ["C++", "Python", "Protobuf", "Test Automation"],
+    "github": "",
+    "demo": ""
+  }
+]
